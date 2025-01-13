@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextField để nhập chi phí dịch vụ -->
+
+    <!-- RadioGroup với các RadioButton -->
+
+    <EditText
+        android:id="@+id/costOfService"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="Enter cost of service"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/tipOptions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/costOfService"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/option_twenty_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%" />
+
+    </RadioGroup>
+
+    <!-- Switch để bật/tắt làm tròn -->
+
+    <!-- Button để tính toán -->
+
+    <!-- TextView để hiển thị kết quả -->
+
+    <Switch
+        android:id="@+id/roundUpSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="140dp"
+        android:text="Round Up Tip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tipOptions" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="395dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="64dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/roundUpSwitch" />
+
+    <TextView
+        android:id="@+id/tipResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Tip amount: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculateButton" />
+
+    <RadioButton
+        android:id="@+id/option_fifteen_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15%"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <RadioButton
+        android:id="@+id/option_eighteen_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18%"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="178dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
