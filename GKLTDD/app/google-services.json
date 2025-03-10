@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "511929892084",
+    "project_id": "gkltdd-6bb5f",
+    "storage_bucket": "gkltdd-6bb5f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511929892084:android:5d0ff5d73a9e75afdef2a1",
+        "android_client_info": {
+          "package_name": "com.example.gkltdd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9s7jtpuj-8Q-t3_2W7XjH4vEkJzWOcck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
