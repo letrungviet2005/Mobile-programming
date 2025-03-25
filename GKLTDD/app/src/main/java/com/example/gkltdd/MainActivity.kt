@@ -333,8 +333,6 @@ fun ReviewItem(name: String, date: String, stars: Float, title: String, review: 
                         modifier = Modifier.size(25.dp),
                         tint = Color.Gray
                     )
-
-
                     Text(
                         text = name,
                         Modifier.padding(start = 5.dp, end = 5.dp),
@@ -354,7 +352,7 @@ fun ReviewItem(name: String, date: String, stars: Float, title: String, review: 
     }
 }
 
-// Dữ liệu mẫu
+
 val sampleProducts = listOf(
     Product(1,android.R.drawable.ic_menu_gallery, "Bàn cổ điển Hàn Quốc", "Chiếc bàn này được chế tác tại Hàn Quốc, với khung gỗ nâu sẫm và các đường nét chạm khắc tinh xảo. Mặt bàn vuông vắn, chân bàn tiện tròn, cùng các ngăn kéo trang trí tinh tế.", 4.5f, "12.99"),
     Product(2, android.R.drawable.ic_menu_gallery, "Ghế gỗ cổ điển Trung Quốc", "Ghế gỗ cổ điển Trung Quốc có xuất xứ từ Trung Quốc, triều Minh (1368–1644). Ghế làm từ gỗ hồng mộc quý hiếm, thiết kế tinh tế với lưng cong nhẹ, chân ghế chạm khắc hoa văn truyền thống. Màu gỗ nâu sẫm, bóng mượt, thể hiện sự thanh nhã và sang trọng.", 4.0f, "7.95"),
